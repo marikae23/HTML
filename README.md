@@ -18,6 +18,21 @@ Primeiramente, aqui estão algumas das tags HTML mais comuns e suas funções b�
   
 `<ul>` e `<li>`: Usados para criar listas não ordenadas de itens.
 
+## Funções mais avançadas
+Essas estruturas avançadas de HTML permitem que os desenvolvedores criem páginas da web mais complexas e ricas em conteúdo, oferecendo aos usuários uma experiência mais agradável e interativa. No entanto, é importante lembrar que essas estruturas devem ser usadas de forma estratégica e coerente para garantir que a página da web seja fácil de navegar e entender. Algumas delas incluem:
+
+`<header>`: Usado para criar um cabeçalho ou uma seção de introdução no topo de uma página da web. Pode incluir elementos como o logotipo do site, uma barra de navegação e uma descrição breve do conteúdo da página.
+
+`<nav>`: Usado para criar uma seção de navegação em uma página da web. Normalmente inclui links para outras páginas do site ou para outras seções da página atual.
+
+`<section>`: Usado para criar seções de conteúdo distintas em uma página da web. Cada seção pode ter seu próprio cabeçalho, subseções e conteúdo.
+
+`<article>`: Usado para criar um conteúdo independente e autônomo em uma página da web. Pode ser um post de blog, uma notícia ou uma história, por exemplo.
+
+`<aside>`: Usado para criar uma seção de conteúdo que é secundária ou complementar ao conteúdo principal da página. Pode incluir informações adicionais, como anúncios, links relacionados ou outras informações úteis.
+  
+`<footer>`: Usado para criar um rodapé ou uma seção de conclusão no final de uma página da web. Pode incluir informações de contato, links para as redes sociais ou outras informações importantes.
+
 ## Passo-a-passo
 1. Crie um arquivo HTML vazio e salve-o com a extensão ".html".
 
