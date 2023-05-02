@@ -1,7 +1,7 @@
 # HTML
 ## Estrutura de HTML, passo a passo:
 
-**Tags de cabeçalho (<h1> a <h6>):
+**Tags de cabeçalho ( <h1> a <h6> ):
 >As tags de cabeçalho são usadas para definir o título e o sub-título da página. 
 A tag <h1> é a mais importante e é geralmente usada para o título principal da página, enquanto as tags <h2> a <h6> são usadas para subtítulos e subseções. 
   
