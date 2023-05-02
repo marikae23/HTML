@@ -1,8 +1,8 @@
 # HTML
-## Estrutura de HTML, passo a passo:
+Estrutura de HTML, passo a passo:
 
-**Tags de cabeçalho ( <h1> a <h6> ):
->As tags de cabeçalho são usadas para definir o título e o sub-título da página. 
+Tags de cabeçalho ( <h1> a <h6> ):
+As tags de cabeçalho são usadas para definir o título e o sub-título da página. 
 A tag <h1> é a mais importante e é geralmente usada para o título principal da página, enquanto as tags <h2> a <h6> são usadas para subtítulos e subseções. 
   
 Exemplo: 
@@ -18,7 +18,7 @@ Exemplo:
 </html>
 
 **Parágrafos (<p>):
->A tag <p> é usada para definir parágrafos de texto. O texto dentro da tag <p> é geralmente formatado com uma quebra de linha entre cada parágrafo.
+A tag <p> é usada para definir parágrafos de texto. O texto dentro da tag <p> é geralmente formatado com uma quebra de linha entre cada parágrafo.
 
 Exemplo:
 <!DOCTYPE html>
@@ -33,8 +33,8 @@ Exemplo:
   </body>
 </html>
 
-**Listas (<ul>, <ol> e <li>):
->As listas são usadas para organizar informações em itens. Existem dois tipos de listas: listas não ordenadas (<ul>) e listas ordenadas (<ol>). Cada item da lista é definido com a tag <li>.
+Listas (<ul>, <ol> e <li>):
+As listas são usadas para organizar informações em itens. Existem dois tipos de listas: listas não ordenadas (<ul>) e listas ordenadas (<ol>). Cada item da lista é definido com a tag <li>.
   
 Exemplo:
 <!DOCTYPE html>
@@ -52,8 +52,8 @@ Exemplo:
   </body>
 </html>
 
-**Links (<a>):
->A tag <a> é usada para criar links para outras páginas da web ou para outros locais na mesma página. O atributo href é usado para especificar o URL da página para a qual o link aponta.
+Links (<a>):
+A tag <a> é usada para criar links para outras páginas da web ou para outros locais na mesma página. O atributo href é usado para especificar o URL da página para a qual o link aponta.
   
 Exemplo:
 <!DOCTYPE html>
