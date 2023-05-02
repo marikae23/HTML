@@ -1,5 +1,5 @@
 # HTML
-**Olá!**
+**Olá!** :cupid:
 Primeiramente, aqui estão algumas das tags HTML mais comuns e suas funções básicas:
 
 `<html>`: Envolve todo o conteúdo de uma página da web.
