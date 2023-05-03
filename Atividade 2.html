@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Galeria de Arte!</title>
-    <style>
 
-body {
-        background-color: #f0a6ca
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <title>Galeria de Arte!</title>
+  <style>
+    body {
+      background-color:#fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-      header {
-        background-color: #e27396;
-        color: #fff;
+    header {
+        background-color: #ff82ab;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,108 +21,184 @@ body {
         padding: 1rem;
       }
 
-      h1 {
-        margin: 0;
-      }
+    button {
+      background-color: white;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #ef476f;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
 
-      nav {
-        display: flex;
-      }
+    .button-1:hover,
+    .button-1:focus {
+      background-color: #ef476f;
+    }
 
-      header ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-      }
+    h1 {
+      margin: 0;
+    }
 
-      li {
-        margin: 0 1rem;
-      }
+    nav {
+      display: flex;
+    }
 
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-      main {
-        padding: 2rem;
-      }
+    li {
+      margin: 0 1rem;
+    }
 
-      section {
-        margin-bottom: 2rem;
-      }
+    a {
+      color: #96002a;
+      text-decoration: none;
+    }
 
-      h2 {
-        margin: 0;
-      }
+    main {
+      padding: 2rem;
+    }
 
-      main ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-      }
+    h2 {
+      margin-bottom: 2rem;
+    }
 
-      main ul li {
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        flex: 1 0 200px;
-      }
+    h2 {
+      margin: 0;
+    }
 
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+    .title {
+      color: #ef476f;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+     
+    }
 
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        text-align: center;
-      }
+    main ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-      footer p {
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Galeria de Arte</h1>
-      <nav>
-        <ul>
-          <li><a href="#kirby">Kirby</a></li>
-          <li><a href="#zelda">Zelda</a></li>
-          <li><a href="#mario">Mario</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="Kirby">
-        <h2>Kirby</h2>
-        <p>Conheça as estrelas da série de jogos Kirby!</p>
-        <ul>
-          <li><a href="https://kirby.fandom.com/wiki/Kirby"><img src="https://kirby.nintendo.com/assets/img/about/characters-kirby.png" alt="Kirby"></a></li>
-          <li><a href="https://kirby.fandom.com/wiki/Waddle_Dee"><img src="https://kirby.nintendo.com/assets/img/about/characters-waddledee.png" alt="Waddle Dee"></a></li>
-          <li><a href="https://kirby.fandom.com/wiki/King_Dedede"><img src="https://kirby.nintendo.com/assets/img/about/characters-kingdedede.png" alt="King Dedede"></a></li>
-          <li><a href="https://kirby.fandom.com/wiki/Meta_Knight"><img src="https://kirby.nintendo.com/assets/img/about/characters-metaknight.png" alt="Meta Knight"></a></li>
-        </ul>
-      </section>
-      <section id="zelda">
-        <h2>Zelda</h2>
-        <p>Alguns dos jogos mais famoso do personagem Zelda:</p>
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)"><img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Link_-_The_Legend_of_Zelda.png" alt="Link"></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Princess_Zelda"><img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Princess_Zelda%2C_skyward_sword.png" alt="Princess Zelda"></a></li>
-        </ul>
-      </section>
-      <section id="mario">
-        <h2>Mario</h2>
-        <p>Alguns dos jogos mais famoso do personagem Mario:</p>
-        <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Mario"><img src="https://mario.nintendo.com/static/5173cb58b062e1ec02553be8ed1b8019/d6c10/header-mario.png" alt="Mario"></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Luigi"><img src="https://mario.nintendo.com/static/fd55d7296b9de4ef82e120ba96f091c2/3e25a/header-luigi.png" alt="Luigi"></a></li>
-          <li><a href="https://pt.wikipedia.org/wiki/Princesa_Peach"><img src=""</a></li>
+    main ul li {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      flex: 1 0 200px;
+    }
+
+    img {
+      max-width: auto;
+      height: 200px;
+      justify-content: space-evenly;
+
+    }
+
+    footer {
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Galeria de Arte</h1>
+    <nav>
+      <ul>
+        <li> 
+        <button>
+          <div><a href="#kirby">Kirby</a> 
+        </button> 
+          </div>
+      </li>
+
+      <li>
+      <button>
+        <div><a href="#acnh">Animal Crossing</a>
+        </button>
+       </div>
+      </li>
+
+      <li>
+      <button>
+        <div><a href="#mario">Mario</a>
+            </button>
+          </div>
+          </li>
+      </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="Kirby">
+      <h2 class="title">Kirby</h2>
+      <p>Conheça as estrelas da série de jogos Kirby (星のカービィ)! Kirby é um personagem de videogame criado pela Nintendo em 1992. Ele é o protagonista da série de jogos "Kirby", onde sua principal habilidade é copiar as habilidades de seus inimigos ao engoli-los. A série de jogos Kirby já vendeu mais de 40 milhões de cópias em todo o mundo e é considerada uma das séries mais bem-sucedidas da Nintendo. Além dos jogos, Kirby também apareceu em outros produtos da Nintendo, como desenhos animados, quadrinhos e brinquedos.
+
+        Kirby é um personagem icônico da cultura pop, reconhecido por sua aparência fofa e rosa, bem como por sua habilidade única de copiar as habilidades de seus inimigos. Ele também é popular entre os jogadores por ser um personagem fácil de jogar e acessível para jogadores de todas as idades e habilidades.</p>
+      <ul>
+        <li><a href="https://kirby.fandom.com/wiki/Kirby"><img src="https://kirby.nintendo.com/assets/img/about/characters-kirby.png" alt="Kirby"></a></li>
+        <li><a href="https://kirby.fandom.com/wiki/Waddle_Dee"><img src="https://kirby.nintendo.com/assets/img/about/characters-waddledee.png" alt="Waddle Dee"></a></li>
+        <li><a href="https://kirby.fandom.com/wiki/King_Dedede"><img src="https://kirby.nintendo.com/assets/img/about/characters-kingdedede.png" alt="King Dedede"></a></li>
+        <li><a href="https://kirby.fandom.com/wiki/Meta_Knight"><img src="https://kirby.nintendo.com/assets/img/about/characters-metaknight.png" alt="Meta Knight"></a></li>
+      </ul>
+    </section>
+    <section id="acnh">
+      <h2 class="title">Animal Crossing</h2>
+      <p>Conheça as estrelas da série de jogos Animal Crossing (あつまれ どうぶつの森)! O jogo se passa em uma cidade habitada por animais antropomórficos, onde o jogador assume o papel de um personagem humano que se muda para a cidade e interage com os moradores locais. O objetivo do jogo é simplesmente viver a vida na cidade, participando de atividades como pescar, caçar insetos, decorar a casa e socializar com os moradores.
+
+        Desde o seu lançamento inicial, a série Animal Crossing se tornou um grande sucesso devido à sua jogabilidade relaxante e socialmente envolvente, bem como ao seu caráter inovador, que envolve eventos em tempo real que ocorrem no jogo, independentemente da ação do jogador. A série se expandiu para vários consoles da Nintendo, incluindo o Nintendo Switch, onde "Animal Crossing: New Horizons" se tornou um grande sucesso em 2020, especialmente durante a pandemia do COVID-19.</p>
+      <ul>
+        <li><a href="https://nookipedia.com/wiki/Isabelle"><img src="https://www.animal-crossing.com/new-horizons/assets/img/getting-started/header-char-3.png"alt="Isabelle"></a></li>
+        <li><a href="https://nookipedia.com/wiki/Tom_Nook"><img src="https://dodo.ac/np/images/thumb/e/e3/Tom_Nook_NH.png/225px-Tom_Nook_NH.png" alt="Tom Nook"></a></li>
+        <li><a href="https://nookipedia.com/wiki/Blathers"><img src="https://dodo.ac/np/images/thumb/f/fe/Blathers_NH_2.png/225px-Blathers_NH_2.png" alt="Blathers"></a></li>
+        <li><a href="https://nookipedia.com/wiki/Timmy_and_Tommy"><img src="https://dodo.ac/np/images/thumb/a/a1/Timmy_%26_Tommy_NH_Transparent.png/375px-Timmy_%26_Tommy_NH_Transparent.png" alt="Timmy e Tommy"></a></li>
+      </ul>
+    </section>
+    <section id="mario">
+      <h2 class="title">Mario</h2>
+      <p>Conheça as estrelas da série de jogos Mario (マリオ)! A franquia Mario é uma das mais populares e icônicas franquias de videogames de todos os tempos. Ela foi criada pela Nintendo em 1985 com o lançamento do jogo "Super Mario Bros." para o console NES (Nintendo Entertainment System). Desde então, a franquia Mario cresceu e se expandiu para incluir uma grande variedade de jogos, consoles e personagens.
+
+        A história da franquia Mario gira em torno do encanador italiano Mario e seu irmão mais novo, Luigi, que vivem no Reino dos Cogumelos. Eles se aventuram por vários mundos para resgatar a princesa Peach, que é frequentemente sequestrada pelo vilão Bowser. Ao longo dos anos, a franquia Mario introduziu muitos personagens, como Yoshi, Toad e Donkey Kong, e apresentou vários spin-offs, como "Mario Kart", "Mario Party" e "Super Smash Bros.".</p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Mario"><img src="https://mario.wiki.gallery/images/thumb/3/3e/MPSS_Mario.png/375px-MPSS_Mario.png" alt="Mario"></a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Luigi"><img src="https://upload.wikimedia.org/wikipedia/en/7/73/Luigi_NSMBUDX.png" alt="Luigi"></a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Princesa_Peach"><img src="https://mario.wiki.gallery/images/thumb/2/21/MPSS_Peach.png/330px-MPSS_Peach.png"> </a></li>
+        <li><a href="https://www.mariowiki.com/Bowser"><img src="https://mario.wiki.gallery/images/thumb/7/7d/MSOGT_Bowser.png/450px-MSOGT_Bowser.png"></a></li>
+    </section>
+  </main>
+  <footer>
+      
+  </footer>
+</body>
+</html>
