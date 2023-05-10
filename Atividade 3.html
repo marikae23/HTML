@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+  <title>Trabalho final</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/0370a0eb47.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        
+        background-color: #F4F4F4;
+        padding: 30px;
+        color: black;
+      }
+
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #F2CBB2;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      form {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #F4F4F4;
+        padding: 30px;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        }
+      }
+      button {
+        display: inline-block;
+        border-radius: 20px;
+        background-color: #FF7152;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 105px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      </style>
+  </head>
+<body>
+
+<header>
+
+  <i class="fa-solid fa-genderless"></i></i><h6>Kirby.com</h6>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+  
+  <form>
+    <h2>LOGIN!</h2>
+    <label for="username">Usuário</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Senha:</label>
+		<input type="password" id="password" name="password">
+
+		<button class="button" style="vertical-align: middle;"><span>Entrar</span></button>
+    <h5>Esqueci a Senha</h5>
+  <div style="text-align: center;;">
+    <i class="fa-brands fa-twitch" style="color: #FF7152;font-size:larger; margin-right: 10px;"></i>
+    <i class="fa-brands fa-instagram" style="color: #FF7152;font-size: larger; margin-right: 10px;"></i>
+    <i class="fa-brands fa-twitter" style="color: #FF7152;font-size: larger;margin-right: 10px;"></i>
+  </div>
+
+  </form>
+
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
