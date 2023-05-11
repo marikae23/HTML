@@ -8,18 +8,12 @@
 
   <style>
 
+      @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Roboto+Mono&display=swap');
+
     *{
       box-sizing: border-box;
       padding: 0%;
       margin: 0%;
-    }
-
-    @font-face {
-      font-family: "Roboto_Mono"; 
-      src: url("RobotoMono-VariableFont_wght.ttf");
-      font-family: "Darumadrop";
-      src: url("DarumadropOne-Regular.ttf")
-
     }
 
     body {
@@ -30,7 +24,7 @@
 
     }
     .principal {
-      font-family: Darumadrop;
+      font-family: 'Darumadrop One', cursive;
       color: #f4f4f4;
       float: center;
       font-style:DarumaDrop;
@@ -38,17 +32,126 @@
 
     }
 
-    .login {
-      color: #f4f4f4;
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
     }
+    
+    button {
+      background-color: #F25371;
+      font-size: 24px;
+      color: #f4f4f4;
+      padding: 16px 50px;
+      border-radius: 28px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #7B78B7;
+    }
+
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+
+    img.avatar {
+      width: 20%;
+      border-radius: 50%;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    }
+
+   
+    .modal-content {
+      background-color: #f4f4f4;
+      margin: 5% auto 15%; 
+      border: 1px solid #888;
+      width: 30%; 
+    }
+
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 100%;
+      }
+        }
 
     header {
       background-color: #F490A5;
-      padding: 40px;
+      padding: 36px;
       color: black;
     }
 
-    img {
+    .Kirby {
       float: left;
       margin-right: 20px;
       max-width: auto;
@@ -58,20 +161,20 @@
     }
 
     .text {
-      font-family: Roboto_Mono;
+      font-family: 'Roboto Mono', monospace;
       color: black;
-      font-size: 27px;
+      font-size: 21px;
       text-align: left;
       position: absolute;
       left: 599px;
       margin-right: 178px;
-      bottom: 220px;
+      bottom: 280px;
     }
 
     .button {
       position: absolute;
       left: 590px;
-      bottom: 140px;
+      bottom: 160px;
       border-radius: 24px;
       background-color: #F25371;
       border: none;
@@ -121,18 +224,47 @@
       <div style="text-align: center;">
       <i class="fa-solid fa-star" style="display: inline-block; float: left; font-size: 40px; color: #f4f4f4;"></i>
       <h1 class="principal" style="display: inline-block;">カービィ.com</h1>
-      <h1 class="login" style="display: inline-block; float: right;">LOGIN!</h1>
+      <h1 class="login" style="display: inline-block; float: right;"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN!</button></h1>
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="https://kirby.nintendo.com/assets/img/about/char-2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Usuário</b></label>
+            <input type="text" placeholder="E-mail ou usuário" name="uname" required>
+      
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Senha" name="psw" required>
+              
+            <button type="submit">Login</button><br>
+
+          </div>
+        </form>
+      </div>
+      
+      <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+    }
+}
+</script>
+
     </div>
     </header>
 
     <form>
       
-      <img src="https://kirby.nintendo.com/assets/img/intro/kirby-star2.png" alt="Kirby star">
+      <img class="Kirby" src="https://kirby.nintendo.com/assets/img/intro/kirby-star2.png" alt="Kirby star">
       <div>
     <p class="text">Ele pode ter apenas 20 centímetros de altura, mas você nunca deve subestimar esse pequeno herói rosa. No planeta Pop Star, Kirby usou seu corpo elástico e sua incrível habilidade de absorver inimigos para salvar Dream Land do travesso King Dedede. Desde então, ele passou por inúmeras outras aventuras e até se tornou uma força a ser reconhecida na série de jogos de luta Super Smash Bros™.</p>
     <button class="button"><span>Saiba mais</span></button>
     </div>
-
 
     </form>
 
@@ -148,7 +280,6 @@
 </section>
 
 <footer>
-  <p>Footer</p>
 </footer>
 
 </body>
