@@ -1,136 +1,147 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html>
+
   <head>
-  <title>Trabalho final</title>
-  <meta charset="utf-8">
+  <title>Trabalho Final</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/0370a0eb47.js" crossorigin="anonymous"></script>
-    <style>
-      *{
-        box-sizing: border-box;
-      }
 
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+  <style>
 
-      header {
-        
-        background-color: #F4F4F4;
-        padding: 30px;
-        color: black;
-      }
+    *{
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
 
-      section {
-        display: -webkit-flex;
-        display: flex;
-      }
+    @font-face {
+      font-family: "Roboto_Mono"; 
+      src: url("RobotoMono-VariableFont_wght.ttf");
+      font-family: "Darumadrop";
+      src: url("DarumadropOne-Regular.ttf")
 
-      nav {
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        background: #F2CBB2;
-        padding: 20px;
-      }
+    }
 
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
+    body {
+      line-height: 1.5;
+      background-image: url("1.png"); 
+      background-size: 100%;
+      background-repeat: no-repeat;
 
-      form {
-        -webkit-flex: 3;
-        -ms-flex: 3;
-        flex: 3;
-        background-color: #F4F4F4;
-        padding: 30px;
-      }
+    }
+    .principal {
+      font-family: Darumadrop;
+      color: #f4f4f4;
+      float: center;
+      font-style:DarumaDrop;
+      font-size: 45px;
 
-      footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-      }
+    }
 
-      @media (max-width: 600px) {
-      section {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        }
-      }
-      button {
-        display: inline-block;
-        border-radius: 20px;
-        background-color: #FF7152;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 18px;
-        padding: 10px;
-        width: 105px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-      }
+    .login {
+      color: #f4f4f4;
+    }
 
-      .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
+    header {
+      background-color: #F490A5;
+      padding: 40px;
+      color: black;
+    }
 
-      .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
+    img {
+      float: left;
+      margin-right: 20px;
+      max-width: auto;
+      height: 420px;
+      margin-top: 60px;
+      margin-left: 90px;
+    }
 
-      .button:hover span {
-        padding-right: 25px;
-      }
+    .text {
+      font-family: Roboto_Mono;
+      color: black;
+      font-size: 27px;
+      text-align: left;
+      position: absolute;
+      left: 599px;
+      margin-right: 178px;
+      bottom: 220px;
+    }
 
-      .button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
+    .button {
+      position: absolute;
+      left: 590px;
+      bottom: 140px;
+      border-radius: 24px;
+      background-color: #F25371;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 25px;
+      padding: 10px;
+      width: 180px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
 
-      </style>
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+
+  </style>
+
   </head>
-<body>
 
-<header>
 
-  <i class="fa-solid fa-genderless"></i></i><h6>Kirby.com</h6>
+  <body> 
+    <header>
+      <div style="text-align: center;">
+      <i class="fa-solid fa-star" style="display: inline-block; float: left; font-size: 40px; color: #f4f4f4;"></i>
+      <h1 class="principal" style="display: inline-block;">カービィ.com</h1>
+      <h1 class="login" style="display: inline-block; float: right;">LOGIN!</h1>
+    </div>
+    </header>
 
-</header>
+    <form>
+      
+      <img src="https://kirby.nintendo.com/assets/img/intro/kirby-star2.png" alt="Kirby star">
+      <div>
+    <p class="text">Ele pode ter apenas 20 centímetros de altura, mas você nunca deve subestimar esse pequeno herói rosa. No planeta Pop Star, Kirby usou seu corpo elástico e sua incrível habilidade de absorver inimigos para salvar Dream Land do travesso King Dedede. Desde então, ele passou por inúmeras outras aventuras e até se tornou uma força a ser reconhecida na série de jogos de luta Super Smash Bros™.</p>
+    <button class="button"><span>Saiba mais</span></button>
+    </div>
 
-<section>
-  <nav>
-    <ul>
-    </ul>
-  </nav>
-  
-  <form>
-    <h2>LOGIN!</h2>
-    <label for="username">Usuário</label>
-    <input type="text" id="username" name="username"><br><br>
 
-    <label for="password">Senha:</label>
-		<input type="password" id="password" name="password">
+    </form>
 
-		<button class="button" style="vertical-align: middle;"><span>Entrar</span></button>
-    <h5>Esqueci a Senha</h5>
-  <div style="text-align: center;;">
-    <i class="fa-brands fa-twitch" style="color: #FF7152;font-size:larger; margin-right: 10px;"></i>
-    <i class="fa-brands fa-instagram" style="color: #FF7152;font-size: larger; margin-right: 10px;"></i>
-    <i class="fa-brands fa-twitter" style="color: #FF7152;font-size: larger;margin-right: 10px;"></i>
-  </div>
+    <footer>
+
+    </footer>
+  </body>
+
+</html>
 
   </form>
 
