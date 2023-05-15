@@ -45,7 +45,7 @@
 
     body {
       line-height: 1.5;
-      background-image: url("siteaooaoa\ \(1\).svg"); 
+      background-image: url("https://s39.aconvert.com/convert/p3r68-cdx67/1ndq9-8l7s2.png"); 
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -62,7 +62,7 @@
 
     .btn-login {
       cursor: pointer;
-      font-family: 'Work Sans', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       display: inline-block;
       float: right; 
       line-height: 68px; 
@@ -79,13 +79,14 @@
     }
 
     button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
+      background-color: #33235A;
+      color: #f4f4f4;
+      border-radius: 10px;
+      padding: 14px 10px;
+      margin: 3px 0;
       border: none;
       cursor: pointer;
-      width: 100%;
+      width: 45%;
     }
 
     .cancelbtn {
@@ -101,12 +102,17 @@
     }
 
     img.avatar {
-      width: 40%;
+      width: 25%;
       border-radius: 50%;
     }
 
     .container {
-      padding: 16px;
+      padding: 26px;
+      border-radius: 10px;
+    }
+
+    .container ul {
+      font-size: 60px;
     }
 
     span.psw {
@@ -116,23 +122,27 @@
 
     .modal {
       display: none; 
-      position: fixed; 
+      position: absolute; 
+      font-family: 'Montserrat', sans-serif;;
       z-index: 1; 
       left: 0;
       top: 0;
       width: 100%;
       height: 100%; 
       overflow: auto; 
-      background-color: rgb(0,0,0); 
+      background-color: white;
       background-color: rgba(0,0,0,0.4); 
       padding-top: 60px;
     }
 
     .modal-content {
       background-color: #fefefe;
-      margin: 5% auto 15% auto; 
-      border: 1px solid #888;
-      width: 80%; 
+      position: absolute;
+      right: 120px; 
+      top: 100px;
+      border-radius: 25px;
+      border: 1px solid #fefefe;
+      width: 25%; 
     }
 
     .close {
@@ -184,13 +194,13 @@
     nav {
       background-color: white;
       text-align: center;
-      padding: 9px;
+      padding: 8px;
 
     }
 
     .button-container {
       display: flex;
-      justify-content: center;
+      justify-content: left;
 
     }
 
@@ -204,9 +214,9 @@
     }
 
     .button-container button {
-      margin: 0 36px;
-      font-size: 25.4px;
-      font-family: 'Kosugi Maru', sans-serif;
+      margin: 0 26px;
+      font-size: 24.4px;
+      font-family: 'Montserrat', sans-serif;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -227,24 +237,29 @@
       position: absolute;
       margin-right: 20px;
       max-width: auto;
-      height: 420px;
+      height: 460px;
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 0;
 
     }
 
     .dedede {
-      position: relative;
-      top: 30%;
-      left: 24%;
+      position: absolute;
+      height: 320px;
+      top: 40%;
+      left: 21.4%;
+      z-index: -1;
 
     }
 
     .waddledee {
       position: absolute;
-      top: 25%;
+      height: 170px;
+      top: 23%;
       left: 57%;
+    
     }
 
   </style>
@@ -267,36 +282,32 @@
             <button><a href="https://www.nintendo.com/pt-br/?L000-11:ch=pdpd">Nintendo</a></button>
             <button><a href="https://kirby.nintendo.com/about/">Sobre</a></button>
           </div>
-  
+
           <div id="id01" class="modal">
             <form class="modal-content animate" action="/action_page.php" method="post">
               <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-              </div>
-            
+                <img src="https://kirby.nintendo.com/assets/img/about/char-2.png" alt="Avatar" class="avatar">
+               </div>
+              <div class="container ul"><h2>Login!</h2></div>
+
               <div class="container">
-                <label for="uname"><b>Username</b></label>
+                <label for="uname"><b>Email ou usuário</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
             
-                <label for="psw"><b>Password</b></label>
+                <label for="psw"><b>Senha</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
+                <a href="#">Esqueceu a senha?</a> <br>
                     
                 <button type="submit">Login</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
               </div>
-            
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+
+                
               </div>
             </form>
           </div>
   
           <script>
-            // Get the modal
             var modal = document.getElementById('id01');
             
             window.onclick = function(event) {
@@ -313,14 +324,16 @@
       <div>
         <p class="text">Aprenda a história não tão secreta do poderoso puff rosa da Nintendo, Kirby!</p>
       </div>
-      <img src="https://s4.aconvert.com/convert/p3r68-cdx67/axqff-d1cq1.svg" class="kirby">
-      <img src="https://s4.aconvert.com/convert/p3r68-cdx67/altnk-x6wfn.svg"class="dedede">  
-      <img src="https://s4.aconvert.com/convert/p3r68-cdx67/ah7rv-d5txb.svg" class="waddledee">
+      <img src="https://kirby.nintendo.com/assets/img/intro/kirby-star2.png" class="kirby">
+      <img src="https://kirby.nintendo.com/assets/img/intro/dedede.png"class="dedede">  
+      <img src="https://kirby.nintendo.com/assets/img/intro/waddledee.png" class="waddledee">
+
       <div>
         <p class="text">Aprenda a história não tão secreta do poderoso puff rosa da Nintendo,   Kirby!</p>
       </div>
 
     </form>
+
 
   </body>
 
