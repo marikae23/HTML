@@ -11,6 +11,7 @@
 
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Work+Sans&display=swap');
 
     *{
       box-sizing: border-box;
@@ -29,11 +30,23 @@
       font-family: 'Potta One', cursive;
       color: #f4f4f4;
       float: center;
-      font-size: 39.2px;
+      margin-left: 20px;
+      font-size: 34px;
+      line-height: 1;
 
     }
 
     .login {
+      font-family: 'Work Sans', sans-serif;
+      display: inline-block;
+      float: right; 
+      line-height: 68px; 
+      font-size: 25.4px;
+
+    }
+    
+    .fa-solid fa-circle-user {
+
 
     }
 
@@ -46,19 +59,31 @@
     nav {
       background-color: white;
       text-align: center;
+      padding: 9px;
+      opacity: 0.1;
 
     }
 
-    button {
-      display: inline-block;
+    .button-container {
+      display: flex;
+      justify-content: center;
 
-      
+    }
+
+    .button-container button {
+      margin: 0 36px;
+      font-size: 25.4px;
+      font-family: 'Work Sans', sans-serif;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
     }
 
     .text {
       color: black;
+      font-family: 'Work Sans', sans-serif;
       font-size: 21.6px;
-      text-align: left;
+      text-align: justify;
       position: absolute;
       left: 1090px;
       margin-right: 100px;
@@ -70,13 +95,25 @@
       margin-right: 20px;
       max-width: auto;
       height: 420px;
-      margin-top: 60px;
-      margin-left: 90px;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
 
     }
 
     .dedede {
-      float: left;
+      position: absolute;
+      top: 30%;
+      left: 24%;
+      z-index: 0;
+
+    }
+
+    .waddledee {
+      position: absolute;
+      top: 25%;
+      left: 57%;
     }
 
   </style>
@@ -84,29 +121,21 @@
   
   <body>
     <header>
-      <div style="text-align: left;">
-      <h1 class="principal"style="display: inline-block;">カー ビィ</h1>
-      <i class="fa-solid fa-circle-user" style="display: inline-block; float: right; font-size: 30px;"></i>
-      <h1 class="login" style="display: inline-block; float: right;">Login</h1>
+      <div style="text-align: left; justify-content: space-between; align-items: center;">
+      <h1 class="principal"style="display: inline-block;">カー<br>ビィ</h1>
+      <i class="fa-solid fa-circle-user" style="display: inline-block; float: right; line-height: 68px; font-size: 35px; margin-left: 10px; margin-right: 20px;"></i>
+      <h1 class="login">Login</h1>
     </div>
     </header>
 
     <nav>
       <ul>
         <li>
-          <button><a href="#inicio">Inicio</a></button>
-        </li>
-      </ul>
-      
-      <ul>
-        <li>
-          <button><a href="#nintendo">Nintendo</a></button>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <button><a href="#sobre">Sobre</a></button>
+          <div class="button-container">
+          <button><a href="https://kirby.nintendo.com">Inicio</a></button>
+          <button><a href="https://www.nintendo.com/pt-br/?L000-11:ch=pdpd">Nintendo</a></button>
+          <button><a href="https://kirby.nintendo.com/about/">Sobre</a></button>
+          </div>
         </li>
       </ul>
     </nav>
@@ -117,10 +146,9 @@
       <img src="https://kirby.nintendo.com/assets/img/intro/dedede.png" class="dedede">
       <img src="https://kirby.nintendo.com/assets/img/intro/waddledee.png" class="waddledee">
       <div>
-        <p class="text">Aprenda a história não tão secreta do poderoso puff rosa da Nintendo,  Kirby!</p>
+        <p class="text">Aprenda a história não tão secreta do poderoso puff rosa da Nintendo,   Kirby!</p>
       </div>
 
     </form>
 
   </body>
-
