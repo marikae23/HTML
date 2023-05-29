@@ -1,61 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Kirby - Site Institucional</title>
-    <style>
-      h1 {
-        color: #d62976; */
-        font-size: 48px;
-        text-align: center;
-      }
+package q2
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Kirby</h1>
-      <nav>
-        <ul>
-          <li><a href="https://pt.wikipedia.org/wiki/Kirby_(série)">Sobre</a></li>
-          <li><a href="https://kirby.nintendo.com">Jogos</a></li>
-          <li><a href="https://www.nintendo.com/pt-br/switch/">Nintendo Switch</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+//O torneio de programação do CEUB ocorrerá em breve. Neste ano, equipes de quatro pessoas estão autorizadas a participar.
+//
+//No UniCEUB, temos um grupo de participantes que inclui programadores e matemáticos. Gostaríamos de saber o número máximo
+//de equipes que podem ser formadas, considerando as seguintes regras:
+//
+//- Cada equipe deve ser composta por exatamente quatro estudantes.
+//- Equipes compostas apenas por quatro matemáticos ou apenas por quatro programadores não têm um bom desempenho,
+//  portanto, decidiu-se não formar tais equipes.
+//- Assim, cada equipe deve ter pelo menos um programador e pelo menos um matemático.
+//
+//Escreva um programa que receba como entrada uma lista de participantes e retorne o número máximo de equipes que podem
+//ser formadas, respeitando as regras mencionadas.
+//
+//Cada pessoa só pode fazer parte de uma equipe.
 
-      <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Kirby é um personagem fictício da Nintendo, criado em 1992 pelo designer Masahiro Sakurai. Ele é conhecido por sua aparência fofa e por suas habilidades de absorção, que lhe permitem adquirir as habilidades de seus oponentes. Kirby é um dos personagens mais populares da Nintendo e já estrelou vários jogos.</p>
-      </section>
-      <section id="jogos">
-        <h2>Jogos</h2>
-        <ul>
-          <li> Kirby's Dream Land (1992)</li>
-          <li> Kirby's Adventure (1993)</li>
-          <li> Kirby Super Star (1996)</li>
-          <li> Kirby 64: The Crystal Shards (2000)</li>
-          <li> Kirby: Nightmare in Dream Land (2002)</li>
-          <li> Kirby Air Ride (2003)</li>
-          <li> Kirby: Canvas Curse (2005)</li>
-          <li> Kirby's Epic Yarn (2010)</li>
-          <li> Kirby: Triple Deluxe (2014)</li>
-          <li> Kirby Star Allies (2018)</li>
-        </ul>
-      </section>
-      <section id="curiosidades">
-        <h2>Curiosidades</h2>
-        <ul>
-          <li> Kirby foi originalmente concebido como um personagem secundário para o jogo Kirby's Dream Land, mas se tornou o personagem principal após os testes de jogabilidade.</li>
-          <li> O nome "Kirby" foi inspirado em um advogado que defendeu a Nintendo de um processo nos Estados Unidos.</li>
-          <li> Kirby tem uma habilidade especial de mudar de forma para se adaptar a diferentes situações, como se tornar uma roda, um pássaro ou um tanque de guerra.</li>
-          <li> Kirby apareceu em vários jogos da franquia Super Smash Bros., incluindo como personagem jogável.</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-        
-    </footer>
-  </body>
-</html>
+type Participant struct {
+	Name string
+	Role string
+}
+
+func CalculateTeams(participants []Participant) int {
+	var times int
+	var pro int
+	var mat int
+
+	for p := range participants {
+		if participants[p].Role == "Programmer" {
+			pro++
+		} else {
+			mat++
+		}
+	}
+
+	if pro == 0 || mat == 0 {
+		times = 0
+	} else {
+		times = (pro + mat) / 4
+		if times > mat {
+			times = mat
+		}
+		if times > pro {
+			times = pro
+		}
+	}
+	return times
+
+}
