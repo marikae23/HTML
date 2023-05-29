@@ -19,3 +19,25 @@ func ChooseVideo(videos []Video, time int) (Video, error) {
 	return chosen, fmt.Errorf("Não há videos")
 
 }
+
+			
+5-
+			
+func Register(names []string) []string {
+	x := make(map[string]int)
+	resultado := make([]string, len(names))
+	for i, name := range names {
+		count, exists := x[name]
+		if exists {
+			count++
+			novoNome := fmt.Sprintf("%s%d", name, count)
+			resultado[i] = novoNome
+			x[name] = count
+			x[novoNome] = 0
+		}else {
+			resultado[i] = "OK"
+			x[name] = 0 
+		}
+	}
+	return resultado
+}
