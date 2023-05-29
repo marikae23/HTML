@@ -1,17 +1,21 @@
-func CanBuyFood(stock map[string]int, dogs, cats int) bool {
-	var racaoC int
-	var racaoG int
-	var racaoU int
-	
-	racaoC = stock ["dog"]
-	racaoG = stock ["cat"]
-	racaoU = stock ["universal"]
-	
-	if racaoC+racaoG+racaoU < dogs+cats {
-		return false
+func ChooseVideo(videos []Video, time int) (Video, error) {
+	chosen := Video{
+		ID:            0,
+		Duration:      0,
+		Entertainment: 0,
 	}
-	if racaoC+racaoU < dogs || racaoG + racaoU < cats {
-		return false
-	} 
-	return true
+	confirma := false
+
+	for i := range videos {
+		if videos[i].Duration <= time && videos[i].Entertainment > chosen.Entertainment {
+			chosen = videos[i]
+			confirma = true
+		}
+		time--
+	}
+	if confirma {
+		return chosen, nil
+	}
+	return chosen, fmt.Errorf("Não há videos")
+
 }
