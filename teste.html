@@ -78,3 +78,126 @@
     </div>
 </body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+header h2 {
+    font-size: 2em;
+    color: #1e90ff;
+}
+
+header h3 {
+    font-size: 1.5em;
+    color: #ff4500;
+}
+
+.introduction, .profile, .experience, .education, .expertise {
+    margin-bottom: 40px;
+}
+
+.introduction h2 {
+    font-size: 2em;
+    color: #1e90ff;
+}
+
+.introduction p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.introduction a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #32cd32;
+    text-decoration: none;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #1e90ff;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 20px;
+}
+
+section ul li span {
+    font-weight: bold;
+}
+
+section ul li strong {
+    display: block;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.expertise ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise ul li {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+}
