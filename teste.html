@@ -201,3 +201,9 @@ section ul li strong {
         height: 100px;
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+            var navbar = document.getElementById("navbar");
+            if (window.location.pathname.includes("portfolio.html")) {
+                navbar.style.display = "none";
+            }
+        });
